@@ -1,4 +1,4 @@
-Olá, tudo bem? Eu me chamo Higor e esse é o repositório para minhas aulas assistidas e exercícios feitos durante o curso de HTML5 desenvolvido pelo Gustavo Guanabara em seu canal do Youtube.
+Olá, tudo bem? Eu me chamo Higor e esse é o repositório para minhas aulas assistidas e exercícios feitos durante o curso de HTML5 e CSS3 desenvolvido pelo Gustavo Guanabara em seu canal do Youtube.
 
 Curso: HTML5 e CSS3
 
