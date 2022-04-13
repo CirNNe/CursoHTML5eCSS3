@@ -34,3 +34,12 @@ Capítulo 12: <br />
     Estilos CSS inline <br />
     Estilos CSS internos <br />
     Estilos CSS externos <br />
+Exercícios: <br />
+    e01 - Mensagens <br />
+    e02 - Imagens <br />
+    e03 - Mapa Mundi <br />
+    04 - Emoji <br />
+    05 - Social <br />
+    06 - Tags <br />
+    07 - Navegação <br />
+    08 - Vídeos <br />
