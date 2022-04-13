@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <title>Mídias em HTML</title>
+</head>
+<body>
+    <h1>Imagens Dinâmicas</h1>
+    <p>
+        Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.
+    </p>
+    <picture> <!--tag para que possamos colocar uma ordem de imagens flexíveis-->
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png"> <!--imagem menor-->
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png"> <!--imagem média-->
+        <img src="imagens/foto-g.png" alt="imagem flexível"> <!--e por fim a imagem maior-->
+    </picture> <!--a ordem das imagens deve ser respeitada-->
+
+    <h1>Reproduzindo Áudio</h1>
+    <audio preload="metadata" controls>
+        <!--preload é a opção que vai carregar todo o arquivo quando a página for aberta ou somente quando der o play, que é o caso do metadata-->
+        <!--da mesma forma com as imagens, a ordem deve ser respeitada, se o navegador não conseguir reporduzir o primeiro formato de áudio, ele tentará o próximo (deve-se ter os formatos no seu pc, obviamente)-->
+        <source src="media/guanacast-33.mp3" type="audio/mpeg">
+        <source src="media/guanacast-33.ogg" type="audio/ogg">
+        <source src="media/guanacast-33.wav" type="audio/wav">
+        <!--evitar arquivos wav por ser muitos pesados-->
+    </audio>
+
+    <h1>Vídeos Hospedados Localmente</h1>
+    <video width="500" height="300" poster="imagens/projeto-rir.png" controls>
+        <!--vídeos hospedados locamente geram muitos custos por uso de banda, não são recomendados-->
+        <!--poster é a tumb-->
+        <!--assim como na imagens e áudios, deve-se colocar na ordem de reprodução-->
+        <source src="media/rir-video.ogv" type="video/ogg">
+        <source src="media/rir-video.mp4" type="video/mp4">
+        <source src="media/rir-video.mv4" type="video/mp4">
+        <source src="media/rir-video.webm" type="video/webm">
+    </video>
+    
+    <h1>Vídeo Hospedado Externamente</h1>
+    <!--código copiado da aba "compartilhar" do vídeo no YouTube-->
+    <!--qualquer um poderá assistir o vídeo-->
+    <!--para ter uma restrinção de quem pode assistir o vídeo, usar plataformas como o vímeo, na modalidade paga-->
+    <iframe width="500" height="300" src="https://www.youtube.com/embed/4K_FXp8YAMA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>
